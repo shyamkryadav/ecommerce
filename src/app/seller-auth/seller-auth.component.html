@@ -3,8 +3,8 @@
         <h1> Seller Sign-Up</h1>
         <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
             <input class="form-input" type="text" required ngModel name="name" placeholder="Enter Name">
-            <input class="form-input" type="password" required ngModel name="password" placeholder="Enter Password">
             <input class="form-input" type="text" required email ngModel name="email" placeholder="Enter Email">
+            <input class="form-input" type="password" required ngModel name="password" placeholder="Enter Password">
             <button class="form-button">Sign Up</button>
         </form>
 
