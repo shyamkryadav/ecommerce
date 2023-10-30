@@ -1,5 +1,10 @@
 export interface SignUp{
     name:string,
-    passwrod:string,
+    password:string,
     email:string
+}
+export interface login{
+    // name:string,
+    email:string
+    password:string,
 }

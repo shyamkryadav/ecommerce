@@ -1,46 +1,15 @@
 {
   "seller": [
     {
-      "name": "shyam",
-      "email": "shyamkryadav@gmail.com",
+      "email": "alina@gmail.com",
       "password": "123345",
       "id": 1
     },
     {
-      "name": "shyam sundar yadav",
-      "email": "shyamkryadav@gmail.com",
-      "password": "123345",
+      "name": "shaym",
+      "email": "shyam123@gmail.com",
+      "password": "12345",
       "id": 2
-    },
-    {
-      "name": "shyam",
-      "email": "shyamkryadav@gmail.com",
-      "password": "123345",
-      "id": 3
-    },
-    {
-      "name": "shyam",
-      "email": "shyamkryadav@gmail.com",
-      "password": "123345",
-      "id": 4
-    },
-    {
-      "name": "",
-      "email": "shyamkryadav@gmail.com",
-      "password": "123345",
-      "id": 5
-    },
-    {
-      "name": "alina",
-      "email": "alina@gmail.com",
-      "password": "123345",
-      "id": 6
-    },
-    {
-      "name": "alina",
-      "email": "alina@gmail.com",
-      "password": "123345",
-      "id": 7
     }
   ]
 }

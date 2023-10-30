@@ -1,12 +1,71 @@
 <div class="seller-auth">
-    <div class="sign-up">
-        <h1> Seller Sign-Up</h1>
-        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
-            <input class="form-input" type="text" required ngModel name="name" placeholder="Enter Name">
-            <input class="form-input" type="text" required email ngModel name="email" placeholder="Enter Email">
-            <input class="form-input" type="password" required ngModel name="password" placeholder="Enter Password">
-            <button class="form-button">Sign Up</button>
-        </form>
+  <div *ngIf="!showLogin" class="sign-up">
+    <h1>Seller Sign-Up</h1>
+    <form
+      #sellerSignUp="ngForm"
+      (ngSubmit)="signUp(sellerSignUp.value)"
+      class="common-form"
+    >
+      <input
+        class="form-input"
+        type="text"
+        required
+        ngModel
+        name="name"
+        placeholder="Enter Name"
+      />
+      <input
+        class="form-input"
+        type="text"
+        required
+        email
+        ngModel
+        name="email"
+        placeholder="Enter Email"
+      />
+      <input
+        class="form-input"
+        type="password"
+        required
+        ngModel
+        name="password"
+        placeholder="Enter Password"
+      />
+      <button class="form-button">Sign Up</button>
+      <a class="auth-toggle-link" (click)="openLogin()">Already Have Account Click to Login</a>
+    </form>
+  </div>
 
-    </div>
+  <!-- Login Area  -->
+  <div *ngIf="showLogin" class="login">
+    <h1>Seller Login</h1>
+    <p class="error-p">{{authError}}</p>
+    <form
+      #sellerLogin="ngForm"
+      (ngSubmit)="LoginUp(sellerLogin.value)"
+      class="common-form"
+    >
+      <input
+        class="form-input"
+        type="text"
+        required
+        email
+        ngModel
+        name="email"
+        placeholder="Enter Email"
+      />
+      <input
+        class="form-input"
+        type="password"
+        required
+        ngModel
+        name="password"
+        placeholder="Enter Password"
+      />
+      <button class="form-button">Login </button>
+      <a class="auth-toggle-link" (click)="openSignUp()">Don't Have Account Click to Login</a>
+
+    </form>
+  </div>
+
 </div>
