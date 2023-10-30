@@ -10,11 +10,16 @@ import { product } from '../data-type';
 export class HomeComponent {
   // images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
   popularProducts:undefined| product[];
+  trendyProducts:undefined | product[];
   constructor(private product:ProductService){}
 
   ngOnInit(): void {
    this.product.popularProducts().subscribe((res)=>{
     this.popularProducts=res
-   })
+   });
+   this.product.trendyProducts().subscribe((res)=>{
+    this.trendyProducts=res
+   });
   }
+
 }
