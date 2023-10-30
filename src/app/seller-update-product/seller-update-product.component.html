@@ -7,14 +7,14 @@
         type="text"
         required
         name="name"
-        ngModel
+        ngModel="{{productData?.name}}"
         placeholder="Enter Product Name"
       />
       <input
         class="form-input"
         type="text"
         required
-        ngModel
+        ngModel="{{productData?.price}}"
         name="price"
         placeholder="Enter Product price"
       />
@@ -22,7 +22,7 @@
         class="form-input"
         type="text"
         required
-        ngModel
+        ngModel="{{productData?.color}}"
         name="color"
         placeholder="Enter Product color"
       />
@@ -30,7 +30,7 @@
         class="form-input"
         type="text"
         required
-        ngModel
+        ngModel="{{productData?.category}}"
         name="category"
         placeholder="Enter Product category"
       />
@@ -38,7 +38,7 @@
         class="form-input"
         type="text"
         required
-        ngModel
+        ngModel="{{productData?.description}}"
         name="description"
         placeholder="Enter Product description"
       ></textarea>
@@ -46,7 +46,7 @@
       class="form-input"
       type="text"
       required
-      ngModel
+      ngModel="{{productData?.image}}"
       name="image"
       placeholder="Enter Product Image Url"
       />
