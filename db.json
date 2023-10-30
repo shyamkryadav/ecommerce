@@ -140,7 +140,7 @@
   ],
   "products": [
     {
-      "name": "shyam sundar yadav",
+      "name": "pc",
       "price": "sadf",
       "color": "black",
       "category": "electronic",
@@ -176,10 +176,10 @@
       "id": 5
     },
     {
-      "name": "shyam sundar yadav",
-      "price": "sadf",
-      "color": "sdfsa",
-      "category": "asdfas",
+      "name": "mobile",
+      "price": "500",
+      "color": "red",
+      "category": "electronic",
       "description": "sdf",
       "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "id": 6
