@@ -30,3 +30,8 @@ body{
     cursor: pointer;
 
 }
+
+.p-message{
+    color: green;
+    text-align: center;
+}
