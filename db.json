@@ -10,6 +10,36 @@
       "email": "shyam123@gmail.com",
       "password": "12345",
       "id": 2
+    },
+    {
+      "name": "shyam sundar yadav",
+      "email": "alina@gmail.com",
+      "password": "123345",
+      "id": 3
+    },
+    {
+      "name": "shyam sundar yadav",
+      "email": "alina@gmail.com",
+      "password": "123345",
+      "id": 4
+    },
+    {
+      "name": "shyam sundar yadav",
+      "email": "alina@gmail.com",
+      "password": "123345",
+      "id": 5
+    },
+    {
+      "name": "shyam sundar yadav",
+      "email": "alina@gmail.com",
+      "password": "123345",
+      "id": 6
+    },
+    {
+      "name": "shyam",
+      "email": "alina@gmail.com",
+      "password": "123345",
+      "id": 7
     }
   ]
 }

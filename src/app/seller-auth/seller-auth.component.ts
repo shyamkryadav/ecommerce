@@ -29,13 +29,10 @@ export class SellerAuthComponent {
       }
     })
   }
-
   openLogin(){
     this.showLogin=true
   }
   openSignUp(){
     this.showLogin=false
   }
-
-
-}
+ }
