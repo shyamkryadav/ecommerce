@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { product } from '../data-type';
+import { concatAll } from 'rxjs';
 
 
 @Component({
@@ -49,5 +50,8 @@ export class HeaderComponent {
   }
   hideSearch(){
     this.searchResult=undefined;
+  }
+  SubmitSearch(val:string){
+   this.rout.navigate([`search/${val}`])
   }
 }
