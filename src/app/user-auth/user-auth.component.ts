@@ -9,6 +9,7 @@ import { UserService } from '../services/user.service';
 })
 export class UserAuthComponent {
   showLogin:boolean=true;
+  authError:string="";
   constructor(private user:UserService){}
 
   ngOnInit(): void {
@@ -20,7 +21,13 @@ export class UserAuthComponent {
   }
 
   login(data:login){
-      console.log(data)
+      this.user.userLogin(data)
+      this.user.invalidUserAuth.subscribe((res)=>{
+        // console.log("apple",res)
+        if(res){
+          this.authError="Please Enter Valid user Details"
+        }
+      })
   }
 
   openSignUP(){
