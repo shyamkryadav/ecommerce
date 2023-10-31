@@ -18,7 +18,7 @@ export class HeaderComponent {
 
   ngOnInit(): void {
     this.rout.events.subscribe((res:any)=>{
-      console.log(res.url)
+      // console.log(res.url)
       if(res.url){
         if(localStorage.getItem('seller') && res.url.includes('seller')){
          this.menuType="seller"
