@@ -4,7 +4,7 @@
     <input type="text" #serachInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search for Products" />
     <button (click)="SubmitSearch(serachInput.value)">Search</button>
     <ul class="suggested-result" *ngIf="searchResult">
-      <li *ngFor="let item of searchResult "><a >{{item.name}}</a></li>
+      <li *ngFor="let item of searchResult "><a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a></li>
     </ul>
   </div>
   <div [ngSwitch]="menuType">
