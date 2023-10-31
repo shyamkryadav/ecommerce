@@ -7,41 +7,53 @@
       type="text"
       required
       name="name"
-      ngModel
       placeholder="Enter Product Name"
+      ngModel
+      #name="ngModel"
+      required
     />
+    <p class="invalid-input"><span *ngIf="name.invalid && name.touched">Please Enter Product Name</span></p>
     <input
       class="form-input"
       type="text"
-      required
       ngModel
+      #price="ngModel"
+      required
       name="price"
       placeholder="Enter Product price"
     />
+    <p class="invalid-input"><span *ngIf="price.invalid && price.touched">Please Enter Product Price</span></p>
     <input
       class="form-input"
       type="text"
       required
       ngModel
+      #color="ngModel"
       name="color"
       placeholder="Enter Product color"
     />
+    <p class="invalid-input"><span *ngIf="color.invalid && color.touched">Please Enter Product Color</span></p>
     <input
       class="form-input"
       type="text"
       required
       ngModel
       name="category"
+      #category="ngModel"
       placeholder="Enter Product category"
     />
+    <p class="invalid-input"><span *ngIf="category.invalid && category.touched">Please Enter Product Category</span></p>
     <textarea
       class="form-input"
       type="text"
       required
       ngModel
       name="description"
+      #description="ngModel"
       placeholder="Enter Product description"
     ></textarea>
+    <p class="invalid-input"><span *ngIf="description.invalid && description.touched">Please Enter Product Description</span></p>
+
     <input
     class="form-input"
     type="text"
@@ -49,7 +61,10 @@
     ngModel
     name="image"
     placeholder="Enter Product Image Url"
+    #imgUrl="ngModel"
     />
-    <button class="form-button">Add Product</button>
+    <p class="invalid-input"><span *ngIf="imgUrl.invalid && imgUrl.touched">Please Enter Product ImgUrl</span></p>
+
+    <button class="form-button" [disabled]="addProduct.invalid">Add Product</button>
   </form>
 </div>
