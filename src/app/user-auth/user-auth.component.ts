@@ -10,6 +10,10 @@ import { UserService } from '../services/user.service';
 export class UserAuthComponent {
   constructor(private user:UserService){}
 
+  ngOnInit(): void {
+   this.user.userAuthReload()
+  }
+
   singUp(data:SignUp){
     this.user.userSignup(data)
   }

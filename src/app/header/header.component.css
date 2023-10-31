@@ -22,6 +22,7 @@
 .nav ul li a {
   text-decoration: none;
   color: blueviolet;
+  cursor: pointer;
 }
 
 .nav .nav-search {

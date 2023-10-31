@@ -12,22 +12,28 @@ import { concatAll } from 'rxjs';
 })
 export class HeaderComponent {
   menuType:string='default'
-  sellerName='';
+  sellerName:string='';
+  userName:string='';
   searchResult:undefined| product[];
   constructor(private rout:Router,private product:ProductService){}
 
   ngOnInit(): void {
     this.rout.events.subscribe((res:any)=>{
-      // console.log(res.url)
       if(res.url){
         if(localStorage.getItem('seller') && res.url.includes('seller')){
-         this.menuType="seller"
          if(localStorage.getItem('seller')){
           let sellerStore = localStorage.getItem('seller');
-          let sellerData = sellerStore && JSON.parse(sellerStore)
+          let sellerData = sellerStore && JSON.parse(sellerStore)[0];
           this.sellerName=sellerData.name;
+         this.menuType="seller"
          }
-        }else{
+        }else if(localStorage.getItem('user')){
+          let userStore=localStorage.getItem('user');
+          let userData=userStore && JSON.parse(userStore);
+          this.userName=userData.name;
+          this.menuType="user"
+
+        } else{
           this.menuType="default"
         }
       }
@@ -36,6 +42,10 @@ export class HeaderComponent {
   logout(){
     localStorage.removeItem('seller');
     this.rout.navigate(['/'])
+  }
+  userLogout(){
+    localStorage.removeItem('user');
+    this.rout.navigate(['/user-auth'])
   }
   searchProduct(query:KeyboardEvent){
     if(query){
