@@ -4,3 +4,11 @@
     margin-top: 80px;
     color: blueviolet;
 }
+.user-auth{
+    margin-bottom: 80px;
+}
+
+.common-form a{
+    color: blueviolet;
+    cursor: pointer;
+}
