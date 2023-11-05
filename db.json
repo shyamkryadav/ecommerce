@@ -206,6 +206,18 @@
       "email": "shyamkryadav345@gmail.com",
       "password": "sdf",
       "id": 5
+    },
+    {
+      "name": "shyam",
+      "email": "shyamkryadav345@gmail.com",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "id": 7
     }
   ]
 }
